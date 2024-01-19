@@ -15,6 +15,10 @@ class CountrySateCitySeeder extends Seeder
      */
     public function run(): void
     {
+        // Important command for seeder
+        // php artisan make:seeder CountrySateCitySeeder
+        // php artisan db:seed --class=CountrySateCitySeeder
+        
         // For usa
         $country  = Country::create(['name'=>'United states']);
         $state  = State::create(['country_id'=> $country->id, 'name' =>'Florida']);  
